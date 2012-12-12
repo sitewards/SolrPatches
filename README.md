@@ -5,6 +5,7 @@ Repo containing patches for the Magento Enterprise integration with Solr.
 
 Patches Provided
 ------------------
+
 The following patch files have been provided:
 *config.xml.patch:
 	*File: app\code\core\Enterprise\Search\etc\config.xml
