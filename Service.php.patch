@@ -1,0 +1,13 @@
+Index: Service.php
+===================================================================
+--- Service.php	(revision 4956)
++++ Service.php	(working copy)
+@@ -609,6 +609,8 @@
+ 				)
+ 			)
+ 		);
++		
++		$context = null;
+
+ 		// attempt a HEAD request to the solr ping page
+ 		$ping = @file_get_contents($this->_pingUrl, false, $context);

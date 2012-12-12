@@ -1,0 +1,13 @@
+Index: Abstract.php
+===================================================================
+--- Abstract.php	(revision 4956)
++++ Abstract.php	(working copy)
+@@ -398,6 +398,8 @@
+ 
+             $attribute->setStoreId($storeId);
+ 
++            $preparedValue = NULL;
++
+             // Preparing data for solr fields
+             if ($attribute->getIsSearchable() || $attribute->getIsVisibleInAdvancedSearch()
+                 || $attribute->getIsFilterable() || $attribute->getIsFilterableInSearch()

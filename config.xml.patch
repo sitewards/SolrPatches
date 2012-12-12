@@ -1,0 +1,36 @@
+Index: config.xml
+===================================================================
+--- config.xml	(revision 4956)
++++ config.xml	(working copy)
+@@ -76,6 +76,15 @@
+         </resources>
+ 
+         <events>
++            <catelogsearch_searchable_attributes_load_after>
++                <observers>
++                    <enterprise_search>
++                        <class>enterprise_search/observer</class>
++                        <method>storeSearchableAttributes</method>
++                    </enterprise_search>
++                </observers>
++            </catelogsearch_searchable_attributes_load_after>
++
+             <catalogsearch_index_process_start>
+                 <observers>
+                     <enterprise_search>
+@@ -126,15 +135,6 @@
+                 </observers>
+             </adminhtml_catalog_product_attribute_edit_prepare_form>
+ 
+-            <catelogsearch_searchable_attributes_load_after>
+-                <observers>
+-                    <enterprise_search>
+-                        <class>enterprise_search/observer</class>
+-                        <method>storeSearchableAttributes</method>
+-                    </enterprise_search>
+-                </observers>
+-            </catelogsearch_searchable_attributes_load_after>
+-
+             <catalogsearch_query_save_after>
+                 <observers>
+                     <enterprise_search>
