@@ -19,5 +19,5 @@ The following patch files have been provided:
 	* File: lib\Apache\Solr\Service.php
 	* Bug: To fix issue where the ping function returns nothing from our server
 
-author: David Manners, 12/2012
+author: Sitewards Development Team, 12/2012
 contact: http://www.sitewards.com
